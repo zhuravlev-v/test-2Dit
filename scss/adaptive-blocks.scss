@@ -1,0 +1,126 @@
+.adaptive-blocks {
+  font-family: 'HelveticaNeueCyr';
+  counter-reset: test3-counter;
+}
+.adaptive-blocks .container {
+  max-width: 1290px;
+}
+.capabilities {
+}
+.capability {
+  display: flex;
+}
+.capability:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.capability:nth-child(even) .content-cms h3 {
+  left: -43%;
+}
+.capability:not(:last-child) {
+  margin-bottom: 60px;
+}
+.capability__content {
+  width: 51.79%;
+}
+.adaptive-blocks .content-cms {
+  padding-top: 42.89px;
+}
+.adaptive-blocks .content-cms h3::before {
+  counter-increment: test3-counter;
+  content: '.0' counter(test3-counter);
+  font-size: 20px;
+  line-height: 150%;
+  vertical-align: super;
+  position: relative;
+  top: -10px;
+  margin-right: 10px;
+}
+.adaptive-blocks .content-cms h3 {
+  font-weight: 400;
+  font-size: 48px;
+  text-transform: uppercase;
+  line-height: 150%;
+
+  width: 138%;
+  // max-width: 668px;
+  // white-space: nowrap;
+  position: absolute;
+}
+.adaptive-blocks .content-cms p {
+  font-size: 16px;
+  line-height: 150%;
+  max-width: 520px;
+  padding-left: 30px;
+  border-left: 1px solid black;
+  margin-left: 80px;
+  margin-top: 5px;
+  margin-right: 38px;
+}
+
+.capability__title-wrapper {
+  position: relative;
+  // min-height: 72px;
+}
+
+.capability:nth-child(even) .content-cms p {
+  margin-left: 50px;
+  margin-right: 78px;
+}
+
+.capability__img-wrapper {
+  width: 48.21%;
+  display: flex;
+  align-items: center;
+}
+.capability__img {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 1115px) {
+  .capability, .capability:nth-child(even) {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+
+  .capability__content {
+    width: unset;
+  }
+
+  .capability__img-wrapper {
+    width: unset;
+  }
+
+  .adaptive-blocks .content-cms p {
+    max-width: unset;
+  }
+
+  .adaptive-blocks .content-cms h3 {
+    width: unset;
+  }
+
+  .capability:nth-child(even) .content-cms h3 {
+    left: unset;
+  }
+}
+
+@media (max-width: 800px) {
+  .adaptive-blocks .content-cms h3 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 599px) {
+  .adaptive-blocks .content-cms p {
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 499px) {
+  .adaptive-blocks .content-cms h3 {
+    font-size: 35px;
+  }
+}

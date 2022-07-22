@@ -1,0 +1,86 @@
+.test4 {
+  font-family: 'Gotham Pro';
+  color: #fff;
+  min-height: 650px;
+  background-image: url('../img/test4/background.jpg');
+  object-fit: cover;
+
+  display: flex;
+  align-items: center;
+}
+
+.test4 .container {
+  max-width: 1134px;
+}
+
+.form__title {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 105%;
+}
+.form__subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0px;
+  margin-top: 12px;
+}
+.form {
+}
+.form__row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+}
+.form__row:first-child {
+  margin: 20px 0px 35px;
+}
+.form__input-wrapper {
+  position: relative;
+}
+.form__input-wrapper::before {
+  content: url(../img/test4/flag.svg);
+  width: 24.75px;
+  height: 17.73px;
+  position: absolute;
+  left: 17.32px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.form__input {
+  min-width: 339.25px;
+  min-height: 50px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid #ffffff;
+
+  color: #fff;
+  font-family: 'Gotham Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+
+  padding-left: 30.84px;
+}
+.form__input::placeholder {
+  color: #fff;
+}
+.form__input[type='tel'] {
+  padding-left: 51.79px;
+}
+.termsOfUse {
+  margin: 0px;
+  max-width: 721px;
+}
+.termsOfUse__link {
+  color: #eb7979;
+}
+.form__btn {  
+  box-sizing: border-box;
+  min-width: 339px;
+  max-height: 49px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}

@@ -1,0 +1,133 @@
+.chairs {
+  font-family: 'Proxima Nova Rg';
+}
+.chairs .container {
+  max-width: 942px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 36px;
+  row-gap: 30px;
+}
+.card {
+  max-width: 290px;
+}
+.card__img-wrapper {
+  position: relative;
+}
+.card__img {
+  display: block;
+}
+.card__badge {
+  font-family: 'Parangon530C';
+  display: inline-block;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 8px;
+  line-height: 9px;
+  padding: 2px 7px 4px 1px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  height: 14px;
+  box-sizing: border-box;
+}
+.card__badge::before {
+  margin: 0px 4px 0px 6px;
+  vertical-align: middle;
+}
+.card__badge_hit {
+  background-color: #A32018;
+}
+.card__badge_hit::before {
+  content: url('../img/test2/star.svg');
+  width: 6px;
+  height: 6px;
+  margin-left: 7px;
+}
+.card__badge_discount {
+  background-color: #E0CD1C;
+}
+.card__badge_discount::before {
+  content: url('../img/test2/discount.svg');
+  width: 7px;
+  height: 7px;
+}
+.card__badge_new {
+  background-color: #087A28;
+}
+.card__badge_new::before {
+  content: url('../img/test2/rocket.svg');
+  width: 7px;
+  height: 7px;
+}
+.card__status {
+  font-size: 8px;
+    line-height: 6px;
+    color: #4F493F;
+    background-color: #ffffff;
+    padding: 3px 6px 2px 0px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    box-sizing: border-box;
+    height: 14px;
+}
+.card__status::before {
+  content: url('../img/test2/check-mark.svg');
+  vertical-align: middle;
+  width: 9px;
+  height: 9px;
+  margin: 0px 2px 0px 5px;
+}
+.card__description {
+  background-color: #eff5f5;
+  padding: 15px 12.5px 0px;
+}
+.card__description-inner {
+  padding-bottom: 23px;
+}
+.card__description-inner p {
+  margin: 0px;
+}
+.card__description-inner *:not(:last-child) {
+  margin-bottom: 10px;
+}
+.card__section {
+  color: #6E6659;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  // margin-bottom: 10px;
+}
+.card__name {
+  font-family: 'Proxima Nova Lt';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #264E58;
+  /* identical to box height */
+  color: #264E58;
+}
+.card__vendor-code {
+  font-size: 14px;
+  line-height: 17px;
+  color: #A5A5A5;
+}
+.card__code {
+  color: #264E58;
+}
+.card__price {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #A5A5A5;
+}
+.card__price-inner {
+  font-family: 'Proxima Nova Rg';
+  font-weight: bold;
+  color: #6E6659;
+  line-height: 29.23px;
+  font-size: 24px;
+}

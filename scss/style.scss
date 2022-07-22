@@ -1,0 +1,40 @@
+@import url(../fonts/Lato/Lato.css);
+@import url(../fonts/ProximaNova/ProximaNova.css);
+@import url(../fonts/Parangon530C/Parangon530C.css);
+@import url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr.css);
+@import url(../fonts/GothamPro/GothamPro.css);
+
+main section {
+  margin-bottom: 75px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+}
+
+button {
+  padding: 0px;
+  margin: 0px;
+  outline: 0;
+  border: 0px;
+  cursor: pointer;
+}
+input {
+  padding: 0px;
+  margin: 0px;
+  outline: 0;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+@import 'accordion.scss';
+@import 'chairs.scss';
+@import 'adaptive-blocks.scss';
+@import 'form.scss';
+@import 'diagram.scss';
