@@ -63,8 +63,6 @@ function centerText() {
     afterDatasetDraw(chart, args, options) {
       const { ctx, chartArea: { left, right, top, bottom, width, height } } = chart;
       const [title, subtitle] = chart.config.data.title;
-      
-      // console.log(title, subtitle)
 
       ctx.save();
       const paddingDoubled = chart.config.options.layout.padding * 2;
@@ -89,7 +87,6 @@ function centerText() {
 Chart.defaults.font.size = 14;
 Chart.defaults.datasets.doughnut.cutout = '80%';
 Chart.defaults.datasets.doughnut.rotation = 270;
-// Chart.defaults.datasets.doughnut.animation.animateScale = true;
 Chart.defaults.elements.arc.borderWidth = 0;
 Chart.defaults.backgroundColor = [
   '#b62028',
@@ -270,8 +267,8 @@ function renderCharts() {
     chartIncomeCitiesConfig
   );
   
-  chartQntyCities.update(); // why does
-  chartIncomeCities.update(); // it works?!
+  chartQntyCities.update();
+  chartIncomeCities.update();
 }
 
 document.addEventListener("DOMContentLoaded", renderCharts);
