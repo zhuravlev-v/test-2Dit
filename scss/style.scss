@@ -3,6 +3,8 @@
 @import url(../fonts/Parangon530C/Parangon530C.css);
 @import url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr.css);
 @import url(../fonts/GothamPro/GothamPro.css);
+@import url(../fonts/MailSansRoman/MailSansRoman.css);
+@import url(../fonts/Commissioner/Commissioner.css);
 
 main section {
   margin-bottom: 75px;
@@ -10,6 +12,10 @@ main section {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0px;
+}
+
+ul {
+  padding: 0px;
 }
 
 button {
@@ -37,4 +43,4 @@ input {
 @import 'chairs.scss';
 @import 'adaptive-blocks.scss';
 @import 'form.scss';
-@import 'diagram.scss';
+@import 'chart.scss';

@@ -1,7 +1,7 @@
 const form = document.querySelector('.form');
 
 form.addEventListener('submit', async (e) => {
-  e.preventDefault();
+  // e.preventDefault();
 
   let formData = new FormData(form);
   

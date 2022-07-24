@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Commissioner';
+    src: url('Commissioner-Medium.eot');
+    src: local('Commissioner Medium'), local('Commissioner-Medium'),
+        url('Commissioner-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Commissioner-Medium.woff2') format('woff2'),
+        url('Commissioner-Medium.woff') format('woff'),
+        url('Commissioner-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Commissioner';
+    src: url('Commissioner-Regular.eot');
+    src: local('Commissioner Regular'), local('Commissioner-Regular'),
+        url('Commissioner-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Commissioner-Regular.woff2') format('woff2'),
+        url('Commissioner-Regular.woff') format('woff'),
+        url('Commissioner-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Commissioner';
+    src: url('Commissioner-SemiBold.eot');
+    src: local('Commissioner SemiBold'), local('Commissioner-SemiBold'),
+        url('Commissioner-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Commissioner-SemiBold.woff2') format('woff2'),
+        url('Commissioner-SemiBold.woff') format('woff'),
+        url('Commissioner-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}

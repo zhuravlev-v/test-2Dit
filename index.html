@@ -424,9 +424,76 @@
         </form>
       </div>
     </section>
-    <!-- <section id="test5" class="chart">
-      <canvas id="myChart"></canvas>
-    </section> -->
+    <section id="test5" class="sales">
+      <div class="container">
+        <div class="sales__suptitle-block">          
+          <div class="toggle-btn-wrapper">
+            <span id="prev" class="toggle-btn__label active">Предыдущий период</span>
+            <button class="toggle-btn">
+              <span class="toggle-btn-thumb"></span>
+            </button>
+            <span id="next" class="toggle-btn__label">План</span>
+          </div>
+        </div>
+        <h2 class="sales__header">Продажи</h2>
+        <div class="statistic">
+          <div class="statistic__quantity">
+            <h3 class="statistic__header">Количество проданных пицц</h3>
+            <div class="statistic__chart-block">
+              <article class="chart">
+                <p class="chart__header">Страны</p>
+                <div class="chart-container">
+                  <div class="chart-wrapper">
+                    <canvas id="chart-quantity-countries"></canvas>
+                  </div>
+                  <div class="legend">
+                    <ul id="legend-quantity-countries" class="legend__list"></ul>
+                  </div>
+                </div>  
+              </article>
+              <article class="chart">
+                <p class="chart__header">Города</p>
+                <div class="chart-container">
+                  <div class="chart-wrapper">
+                    <canvas id="chart-quantity-cities"></canvas>
+                  </div>
+                  <div class="legend">
+                    <ul id="legend-quantity-cities" class="legend__list"></ul>
+                  </div>
+                </div>  
+              </article>
+            </div>
+          </div>
+          <div class="statistic__income">
+            <h3 class="statistic__header">Выручка</h3>
+            <div class="statistic__chart-block">
+              <article class="chart">
+                <p class="chart__header">Страны</p>
+                <div class="chart-container">
+                  <div class="chart-wrapper">
+                    <canvas id="chart-income-countries"></canvas>
+                  </div>
+                  <div class="legend">
+                    <ul id="legend-income-countries" class="legend__list"></ul>
+                  </div>
+                </div>  
+              </article>
+              <article class="chart">
+                <p class="chart__header">Города</p>
+                <div class="chart-container">
+                  <div class="chart-wrapper">
+                    <canvas id="chart-income-cities"></canvas>
+                  </div>
+                  <div class="legend">
+                    <ul id="legend-income-cities" class="legend__list"></ul>
+                  </div>
+                </div>  
+              </article>
+            </div>
+          </div>
+        </div>         
+      </div>
+    </section>
   </main>
   <script src="app/accordion.js"></script>
   <script src="app/app.js"></script>
@@ -434,8 +501,8 @@
   <script src="app/jquery.inputmask.min.js"></script>
   <script src="app/inputmask.js"></script>
   <script src="app/form.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="app/chart.js" type="module"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app/chart.js" type="module"></script>
 </body>
 
 </html>
