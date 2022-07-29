@@ -1,23 +1,23 @@
-const form = document.querySelector('.form');
+const form = document.querySelector('#form');
 
-form.addEventListener('submit', async (e) => {
-  // e.preventDefault();
+form.addEventListener('submit', submitHandler);
+
+async function submitHandler(e) {
+  e.preventDefault();
 
   let formData = new FormData(form);
-  
-  const response = await fetch('sendmail.php', {
-    method: 'POST',
-    body: formData,
-  });
 
-  if (response.ok) {
-    const result = await response.json();
-    alert(result.message);
-    form.reset();
-  } else {
-    alert(`Error. Data has not been sent.
-      ${JSON.stringify(Object.fromEntries(formData.entries()))}
-    `);
-  }
-
-});
+  fetch('https://mockend.com/Valeriy-Zhuravlev/mockend-test/users', {
+      method: 'POST',
+      body: JSON.stringify(formData),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    })
+    .then((response) => {
+      if (response.ok) {
+        alert(`Data sent successfully \n${JSON.stringify(Object.fromEntries(formData), null, 2)}`);
+      }
+    })
+    .catch(err => console.log(err))
+};
